@@ -214,6 +214,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &878706482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 878706484}
+  - component: {fileID: 878706483}
+  m_Layer: 0
+  m_Name: MapGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &878706483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878706482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8177361d9847f2ac4aec55bc6467edf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  straightPrefab: {fileID: 4124211957662787302, guid: c8fc5d36fa9a8b344bae3a65d9b80f70, type: 3}
+  endPrefab: {fileID: 3405307109462365657, guid: 4086c2667a1114947bb766ca5cdb0085, type: 3}
+  turnLeftPrefab: {fileID: 5211397341120575292, guid: 1967ac73c12f44119b3b18efcd64eb43, type: 3}
+  turnRightPrefab: {fileID: 8987388322218743266, guid: d116852a36a27d036a8c9fed64089c86, type: 3}
+  pathLength: 40
+  roomSize: {x: 10, y: 0, z: 10}
+--- !u!4 &878706484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878706482}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1409399570
 GameObject:
   m_ObjectHideFlags: 0
@@ -5203,3 +5253,4 @@ SceneRoots:
   - {fileID: 875230875}
   - {fileID: 1947475850}
   - {fileID: 1409399573}
+  - {fileID: 878706484}
