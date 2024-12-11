@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenuFunc : MonoBehaviour
+public class SceneChanger : MonoBehaviour
 {
 
 
@@ -31,6 +31,21 @@ public class MainMenuFunc : MonoBehaviour
         Debug.Log("Quit Operational");
 
     }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("Level2");
+        Debug.Log("Restart Operational");
+
+    }
+
+
+    public void Menu()
+    {
+        SceneManager.LoadScene("StartScreen");
+        Debug.Log("Menu Button Operational");
+    }
+
 
 
 
