@@ -11,6 +11,18 @@ public class TerrainScanner : MonoBehaviour
     public float scanDelay = 5f;
 
     private bool canScan = true;
+    public GameObject targetPrefab;
+
+    public void CreateNewPoint()
+    {
+        GameObject[] existingPoints;
+        existingPoints=GameObject.FindGameObjectsWithTag("TargetPoint");
+        foreach(GameObject gameObjects in existingPoints)
+        {
+            Destroy(gameObjects);
+        }
+        Instantiate(targetPrefab, transform.position, Quaternion.identity);
+    }
 
 
     void Update()
@@ -26,6 +38,7 @@ public class TerrainScanner : MonoBehaviour
         if(canScan == true)
         {
             SpawnTerrainScanner();
+            CreateNewPoint();
             StartCoroutine(ScanCooldown());
         }
     }

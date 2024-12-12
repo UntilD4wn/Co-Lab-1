@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -3276387702827248641}
   m_Layer: 0
   m_Name: FpsPlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -248,6 +248,7 @@ MonoBehaviour:
   duration: 3
   size: 40
   scanDelay: 5
+  targetPrefab: {fileID: 1840232265146681092, guid: a85f642812b4705c6a16ff4d6ffc6a30, type: 3}
 --- !u!1 &9194841555067331575
 GameObject:
   m_ObjectHideFlags: 0
