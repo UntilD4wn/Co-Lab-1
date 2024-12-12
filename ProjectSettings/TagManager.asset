@@ -6,6 +6,7 @@ TagManager:
   tags:
   - End
   - Room
+  - TargetPoint
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Walkable
+  - Wall
   - 
   - 
   - 

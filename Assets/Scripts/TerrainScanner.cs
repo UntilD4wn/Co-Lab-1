@@ -24,6 +24,19 @@ public class TerrainScanner : MonoBehaviour
         Instantiate(targetPrefab, transform.position, Quaternion.identity);
     }
 
+    IEnumerator ScanTimes(){
+        SpawnTerrainScanner();
+        yield return new WaitForSeconds(0.1f);
+        SpawnTerrainScanner();
+        yield return new WaitForSeconds(0.1f);
+        SpawnTerrainScanner();
+        yield return new WaitForSeconds(0.1f);
+        SpawnTerrainScanner();
+        yield return new WaitForSeconds(0.1f);
+        SpawnTerrainScanner();
+        yield return new WaitForSeconds(0.1f);
+    }
+
 
     void Update()
     {
@@ -37,7 +50,7 @@ public class TerrainScanner : MonoBehaviour
     {
         if(canScan == true)
         {
-            SpawnTerrainScanner();
+            StartCoroutine(ScanTimes());
             CreateNewPoint();
             StartCoroutine(ScanCooldown());
         }
