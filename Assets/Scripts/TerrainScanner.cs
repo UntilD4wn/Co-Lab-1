@@ -8,13 +8,37 @@ public class TerrainScanner : MonoBehaviour
     public float duration = 10;
     public float size = 500;
 
+    public float scanDelay = 5f;
+
+    private bool canScan = true;
+
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            SpawnTerrainScanner();
+            Scan();
         }
+    }
+
+    public void Scan()
+    {
+        if(canScan == true)
+        {
+            SpawnTerrainScanner();
+            StartCoroutine(ScanCooldown());
+        }
+    }
+
+    public IEnumerator ScanCooldown()
+    {
+
+        canScan = false;
+        Debug.Log("Scan countdown started. Can scan: " + canScan);
+        yield return new WaitForSeconds(scanDelay);
+        
+        canScan = true;
+        Debug.Log("Can now scan again. Can scan: " + canScan);
     }
 
     void SpawnTerrainScanner()
