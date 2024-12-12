@@ -103,8 +103,10 @@ public class MapGeneration : MonoBehaviour
 
     void PlaceRoom(GameObject prefab)
     {
-        Instantiate(prefab, currentPosition, currentRotation);
+        GameObject newRoom = Instantiate(prefab, currentPosition, currentRotation);
         occupiedPositions.Add(currentPosition);
+        newRoom.GetComponent<Room>().SetOccupiedPositionsIndex(occupiedPositions.Count);
+
 
         if (prefab == straightPrefab)
         {

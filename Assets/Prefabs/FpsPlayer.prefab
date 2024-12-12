@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4190912642027090429}
   - component: {fileID: 9096231828133893333}
   - component: {fileID: 3186495156929925141}
+  - component: {fileID: -3276387702827248641}
   m_Layer: 0
   m_Name: FpsPlayer
   m_TagString: Untagged
@@ -80,6 +81,18 @@ MonoBehaviour:
   lookSpeed: 2
   lookXLimit: 45
   canMove: 1
+--- !u!114 &-3276387702827248641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811261688574166201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 215af12bc31793e01a8e7f010454ea2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4146884844652110806
 GameObject:
   m_ObjectHideFlags: 0
