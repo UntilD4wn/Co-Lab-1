@@ -21,7 +21,7 @@ public class SceneChanger : MonoBehaviour
 
     public void ChangeScene()
     {
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("Level1");
         Debug.Log("Change Scene Operational");
     }
 
@@ -46,7 +46,10 @@ public class SceneChanger : MonoBehaviour
         Debug.Log("Menu Button Operational");
     }
 
-
+    public void NextLevel()
+    {
+        SceneManager.LoadScene("Level2");
+    }
 
 
 }
